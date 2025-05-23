@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PU Leather Laptop Bag - Product 6</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f2f2f2, #ffffff);
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: #eee;
+    }
+
+    .product-container {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      color: #fff;
+      background-color: #1a1a1a;
+    }
+
+    .product-images {
+      flex: 1 1 450px;
+      text-align: center;
+    }
+
+    .main-img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .thumbnails {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .thumbnails img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: 0.3s ease;
+    }
+
+    .thumbnails img:hover {
+      border-color: #f1c40f;
+      transform: scale(1.1);
+    }
+
+    .product-details {
+      flex: 1 1 500px;
+    }
+
+    .product-details h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .reviews {
+      font-size: 16px;
+      color: #f39c12;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      color: #00e676;
+      margin-bottom: 10px;
+
+    }
+
+    .desc {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .quantity-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .quantity-box button {
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      background: #00acc1;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    #quantity {
+      width: 60px;
+      text-align: center;
+      font-size: 16px;
+      padding: 5px;
+    }
+
+    .buy-btn {
+      background: #f1c40f;
+      color: #000;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #d4ac0d;
+    }
+
+    .guarantee {
+      margin-top: 40px;
+      background: #003300;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
+    .color-option {
+  width: 60px;
+  height: 60px;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.color-option.active {
+  border-color: #00f2fe;
+  box-shadow: 0 0 8px #00f2fe;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <section class="product-container">
+    <div class="product-images">
+      <img id="main-image" src="https://i.postimg.cc/Fs7r5ZCp/1-1644495178949.png" alt="Product" class="main-img" />
+      <div class="thumbnails">
+        <img src="https://i.postimg.cc/Fs7r5ZCp/1-1644495178949.png" onclick="changeImage(this)" />
+        <img src="https://i.postimg.cc/52zfjtVF/2-2551670395046.png" onclick="changeImage(this)" />
+        <img src="https://i.postimg.cc/MG8qB863/3-427883396014.png" onclick="changeImage(this)" />
+        <img src="https://i.postimg.cc/zBzNdSRn/4-1800294750224.png" onclick="changeImage(this)" />
+        <img src="https://i.postimg.cc/85ZSxJhx/7-619777577071.png" onclick="changeImage(this)" />
+      </div>
+    </div>
+
+    <div class="product-details">
+      <h1>💼 PU Leather Laptop Bag</h1>
+      <div class="review-static">⭐ 4.9/5 (418 reviews)</div>
+      <p class="price">$19.99</p>
+      <ul>
+        <li>✨ Elegant & professional design – perfect for business & travel</li>
+        <li>🛡️ Durable PU leather – water-resistant & scratch-proof</li>
+        <li>🧳 Fits 13" to 15.6" laptops – secure and stylish fit</li>
+        <li>📁 Multiple compartments – organize your essentials easily</li>
+        <li>👩‍💼 Unisex style – ideal for both women & men</li>
+      </ul>
+      <form action="checkputProduct6.html" method="GET" onsubmit="saveProduct()">
+        <label>Select Product:</label>
+        <div class="thumbnails">
+          <div class="options">
+            <img src="https://i.postimg.cc/1X4QSmBX/8-268252995902.png" class="color-option"
+              onclick="selectVariant(this, 'A')" />
+            <img src="https://i.postimg.cc/SNBh0pMQ/11-1154435553572.png" class="color-option"
+              onclick="selectVariant(this, 'B')" />
+            <img src="https://i.postimg.cc/MH48KC3D/9-249415331489.png" class="color-option"
+              onclick="selectVariant(this, 'C')" />
+            <img src="https://i.postimg.cc/MKMSrGXr/10-1046539625249.png" class="color-option"
+              onclick="selectVariant(this, 'D')" />
+          </div>
+        </div>
+        <input type="hidden" id="color" name="Color" value="A" />
+        <label for="quantity">Quantity:</label>
+        <div class="quantity-box">
+          <button type="button" onclick="changeQty(-1)">-</button>
+          <input type="hidden" id="selectedColor" name="color">
+          <input type="number" id="quantity" value="1" min="1" readonly />
+          <button type="button" onclick="changeQty(1)">+</button>
+        </div>
+        <input type="hidden" id="product-name" value="💼 PU Leather Laptop Bag">
+        <button type="submit" class="buy-btn">Buy Now</button>
+      </form>
+
+      <div class="guarantee">
+        ✅ 30-Day Money-Back Guarantee.
+        <br>
+        🔒 Secure Checkout & Customer Support.
+        <br>
+        🚚 Fast Delivery Available to EU Countries.
+      </div>
+    </div>
+  </section>
+
+  <input type="hidden" name="Product_Name" id="checkout-product-name" />
+  <input type="hidden" name="Color" id="checkout-color" />
+  <input type="hidden" name="Size" id="checkout-size" />
+  <input type="hidden" name="Quantity" id="checkout-quantity" />
+  <input type="hidden" name="Total_Price" id="checkout-total-price" />
+
+  <script>
+    function selectVariant(el, colorName) {
+      document.getElementById('main-image').src = el.src;
+      document.getElementById('color').value = colorName;
+  
+      document.querySelectorAll('.color-option').forEach(e => e.classList.remove('active'));
+      el.classList.add('active');
+    }
+  
+    function changeQty(amount) {
+      const input = document.getElementById("quantity");
+      let current = parseInt(input.value);
+      current = Math.max(1, current + amount);
+      input.value = current;
+    }
+  
+    function saveProduct() {
+      const productName = document.getElementById("product-name").value;
+      const color = document.getElementById("color").value;
+      const quantity = document.getElementById("quantity").value;
+  
+      const productData = {
+        productName,
+        color,
+        quantity,
+        price: 19.99
+      };
+  
+      localStorage.setItem("product", JSON.stringify(productData));
+    }
+    function selectVariant(el, colorValue) {
+  // غير الصورة الكبيرة
+  document.getElementById("main-image").src = el.src;
+
+  // احفظ اللون
+  document.getElementById("selectedColor").value = colorValue;
+
+  // شيل التحديد من باقي الصور
+  document.querySelectorAll(".color-option").forEach(img => img.classList.remove("active"));
+
+  // ضيف التحديد على الصورة اللي اخترها
+  el.classList.add("active");
+}
+
+function selectVariant(el, colorValue) {
+  // تغيير الصورة الكبيرة
+  document.getElementById("main-image").src = el.src;
+
+  // حفظ اللون في hidden input
+  document.getElementById("selectedColor").value = colorValue;
+
+  // تحديد الصورة المختارة
+  document.querySelectorAll(".color-option").forEach(img => img.classList.remove("active"));
+  el.classList.add("active");
+}
+
+function saveProduct() {
+  const color = document.getElementById("selectedColor").value;
+  const quantity = document.getElementById("quantity").value;
+
+  const productName = "Product X"; // غير الاسم لو عاوز
+
+  const productData = {
+    name: productName,
+    color: color,
+    quantity: quantity,
+    price: 19.99
+  };
+
+  localStorage.setItem("product", JSON.stringify(productData));
+}
+
+
+    
+  </script>
+
+</body>
+
+</html>

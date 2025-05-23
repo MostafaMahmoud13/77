@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posture Corrector Belt - Product 2</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f2f2f2, #ffffff);
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: #eee;
+    }
+
+    .product-container {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      color: #fff;
+      background-color: #1a1a1a;
+    }
+
+    .product-images {
+      flex: 1 1 450px;
+      text-align: center;
+    }
+
+    .main-img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .thumbnails {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .thumbnails img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: 0.3s ease;
+    }
+
+    .thumbnails img:hover {
+      border-color: #f1c40f;
+      transform: scale(1.1);
+    }
+
+    .product-details {
+      flex: 1 1 500px;
+    }
+
+    .product-details h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .reviews {
+      font-size: 16px;
+      color: #f39c12;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      color: #00e676;
+      margin-bottom: 10px;
+
+    }
+
+    .desc {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .quantity-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .quantity-box button {
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      background: #00acc1;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    #quantity {
+      width: 60px;
+      text-align: center;
+      font-size: 16px;
+      padding: 5px;
+    }
+
+    .buy-btn {
+      background: #f1c40f;
+      color: #000;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #d4ac0d;
+    }
+
+    .guarantee {
+      margin-top: 40px;
+      background: #003300;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="product-container">
+    <div class="product-images">
+      <img id="main-image" src="https://i.postimg.cc/Nj3m9SkG/1.png" alt="Product" class="main-img" />
+      <div class="thumbnails">
+        <img src="https://i.postimg.cc/Nj3m9SkG/1.png" onclick="changeImage(this)" />
+        <img src="https://i.postimg.cc/jjyNzcMH/2.png" onclick="changeImage(this)" />
+        <img src="https://i.postimg.cc/NMYXbXnW/4.png" onclick="changeImage(this)" />
+        <img src="https://i.postimg.cc/kGYtnp5m/3.png" onclick="changeImage(this)" />
+        <img src="https://i.postimg.cc/NFjHvcBD/5.png" onclick="changeImage(this)" />
+        <img src="https://i.postimg.cc/65TvHtH5/6.png" onclick="changeImage(this)" />
+        <img src="https://i.postimg.cc/sfTW9v4N/7.png" onclick="changeImage(this)" />
+      </div>
+    </div>
+    <div class="product-details">
+      <h1>🧍‍♂️ Posture Corrector Belt</h1>
+      <p class="reviews">⭐ 4.9/5 (418 reviews)</p>
+      <p class="price">$19.99</p>
+
+      <ul>
+        <li>✅ Corrects posture naturally – reduce back & neck pain</li>
+        <li>💨 Lightweight & breathable – all-day comfort guaranteed</li>
+        <li>🕒 Easy to wear – just 2 minutes a day for visible results</li>
+        <li>🧍‍♀️ Unisex design – fits all body types & sizes</li>
+        <li>🛡️ Invisible under clothes – perfect for everyday use</li>
+      </ul>
+
+
+
+
+      <form action="checkputProduct1.html" method="GET" onsubmit="saveProduct()">
+        <label for="color">Color:</label>
+        <select id="color" required>
+          <option value="Black">Black</option>
+        </select>
+
+        <label for="size">Size:</label>
+        <select id="size" required>
+          <option value="" disabled selected>-- Select Size --</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <div class="quantity-box">
+          <button type="button" onclick="changeQty(-1)">-</button>
+          <input type="number" id="quantity" value="1" min="1" readonly />
+          <button type="button" onclick="changeQty(1)">+</button>
+        </div>
+
+        <button type="submit" class="buy-btn">Buy Now</button>
+      </form>
+
+      <div class="guarantee">
+        ✅ 30-Day Money-Back Guarantee.
+        <br>
+        🔒 Secure Checkout & Customer Support.
+        <br>
+        🚚 Fast Delivery Available to EU Countries.
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function changeImage(el) {
+      document.getElementById('main-image').src = el.src;
+    }
+
+    function changeQty(amount) {
+      const input = document.getElementById("quantity");
+      let current = parseInt(input.value);
+      current = Math.max(1, current + amount);
+      input.value = current;
+    }
+
+    function saveProduct() {
+      const product = {
+        name: "Posture Corrector Belt",
+        color: document.getElementById("color").value,
+        size: document.getElementById("size").value,
+        quantity: document.getElementById("quantity").value,
+        price: 19.99
+      };
+      localStorage.setItem("product", JSON.stringify(product));
+    }
+
+    const reviews = [
+      "⭐ 4.9/5 (418 reviews)",
+      "⭐ 4.8/5 (375 reviews)",
+      "⭐ 5.0/5 (590 reviews)",
+      "⭐ 4.7/5 (290 reviews)",
+      "⭐ 4.9/5 (503 reviews)"
+    ];
+
+    const randomReview = reviews[Math.floor(Math.random() * reviews.length)];
+
+    document.querySelector(".reviews").innerText = randomReview;
+    
+
+    
+  </script>
+
+
+
+</body>
+
+</html>

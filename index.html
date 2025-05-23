@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaMarket</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      position: relative;
+      background-image: url("20.png");
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+
+    .hero button {
+      background-color: #00b894;
+      color: white;
+      border: none;
+      padding: 16px 40px;
+      font-size: 24px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #019270;
+    }
+
+    /* ===== Logo ===== */
+    .logo {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 400px;
+      height: auto;
+      z-index: 3;
+
+    }
+
+    /* ===== Products Section ===== */
+    .products {
+      padding: 60px 50px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
+
+    .product-card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 380px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .product-card p {
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .product-card .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #00e676;
+      margin-bottom: 10px;
+    }
+
+    .product-card button,
+    a.order-btn {
+      background-color: #00acc1;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    a.order-btn:hover {
+      background-color: #008b9a;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 992px) {
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero button {
+        font-size: 20px;
+        padding: 12px 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <img src="33.png" class="logo" alt="Nova Logo" />
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <div class="container">
+        <h1>Experience The Future of E-Commerce</h1>
+        <p>Explore Our Premium Product Collection Built With Performance, Design, And a Seamless User Experience In Mind
+          — Developed By A Passionate Front-End Developer.</p>
+
+      </div>
+
+
+
+      <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+        Explore Products
+      </button>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="product-card">
+      <img src="https://i.postimg.cc/NFjHvcBD/5.png" alt="Wireless Earbuds" />
+      <h3>Wireless Earbuds</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <div class="price">$29.99</div>
+      <a href="product1.html" class="order-btn">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://i.postimg.cc/G36v04n1/7-20032158325564.png" alt="Posture Corrector" />
+      <h3>Posture Corrector</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <div class="price">$19.99</div>
+      <a href="product2.html" class="order-btn">Order Now</a>
+
+    </div>
+    <div class="product-card">
+      <img src="https://i.postimg.cc/W4D2P1PQ/1.png" alt="Night Light" />
+      <h3>Night Light</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <div class="price">$24.99</div>
+      <a href="product3.html" class="order-btn">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://i.postimg.cc/qRLDb250/1-948d79a6-4aa0-4ad7-8e48-25deddf1dff4-trans.png"
+        alt="Smart Water Bottle" />
+      <h3>Smart Water Bottle</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <div class="price">$39.99</div>
+      <a href="product4.html" class="order-btn">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://i.postimg.cc/2jwSYgS4/5-2af088c5-a8f0-4566-95e0-0c71053cda1a.png" alt="Laptop Bag" />
+      <h3>Laptop Bag</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <div class="price">$49.99</div>
+      <a href="product5.html" class="order-btn">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://i.postimg.cc/Fs7r5ZCp/1-1644495178949.png" alt="Smart Watch" />
+      <h3>Smart Watch</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <div class="price">$59.99</div>
+      <a href="product6.html" class="order-btn">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://i.postimg.cc/GpMSvZvn/12-2401310521260320200.png" alt="Bangle Watch" />
+      <h3>Bangle Watch</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <div class="price">$19.89</div>
+      <a href="product7.html" class="order-btn">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://i.postimg.cc/KYHjC8tq/1-d5205ceb-631d-48d0-bfef-10423e85e5aa.png" alt="Insulated Tumbler" />
+      <h3>Insulated Tumbler</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <div class="price">$34.99</div>
+      <a href="product8.html" class="order-btn">Order Now</a>
+    </div>
+  </section>
+  <section id="contact" style="padding: 60px 20px; background-color: #111; color: white; text-align: center;">
+    <h2>Contact Us</h2>
+    <p>Have a question or feedback? We'd love to hear from you!</p>
+    <p>Email: mostafamms302@gmail.com</p>
+    <p>Phone: +20 128 056 7274 </p>
+    <p>Location: Berlin, Germany</p>
+  </section>
+
+
+</body>
+
+</html>
